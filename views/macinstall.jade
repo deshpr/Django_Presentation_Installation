@@ -1,0 +1,81 @@
+html
+  head
+    title= title
+    link(rel='stylesheet' href='/stylesheets/index.css')
+  body  
+    header Huscii Coding Presentations
+    h2 Mac Install
+    ol 
+        li 
+            h2 Installing Django on your machine
+            ol
+                li  Open Terminal. 
+                    | Macs come with Python installed already. Hence, we don't need to install Python. So let's go ahead to the next step.
+                li  We'll have to download a couple of packages from online, and we'll need admin permissions for that.
+                    | So go ahead and enter 
+                    div.code sudo -i
+                    | You'll be prompted to enter the password. Go ahead.  
+                li  Django is a  python based framework. We'll  be downloading a variety of pythong packages.
+                    | And pip is a great tool to do that. So let's go ahead and install pip.
+                    | Type the following in the terminal
+                    div.code easy_install pip
+                    | (Note that since you're the root user now, you don't need to type sudo easy_install pip) 
+                li  | Time to install Django, the  framework we will be using for web  development.
+                    | We'll be using pip to install Django. I love pip and it is absolutely amazing!
+                    | Type the following to install Django.
+                    div.code  pip install django
+                    | Alright!
+         li 
+            h2 Installing MAMP on your machine
+            | So we've installed Django successfully and the stars are with us so far.  Awesome. The next
+            | thing we need to do is install MAMP,  that stands for Macintosh, Apache, MySQL and PHP. 
+            | ( You're right,  that's why its WAMP for Windows  - Windows, Apache, MySQL and PHP)
+            | Hang on, what the hell is  going on here? Why  the installations? 
+            | Here's why:
+            ul
+                    li Apache is a very popular web server software. Therefore, by  installing Apache, you will
+                       | be able to deploy or host  websites you create on a server (since you need a server to 
+                       | host  your website - server 101 folks!)
+                    li MySQL is, that's  right, an RDBMS - Relational Database Management System.
+                       | We will be using MySQL for setting up our databases and communicating with these databases.
+                       | ( yes, we will store data in the database and work with these results on  our website too!)
+                    li You get PHP too.  Having PHP is awesome, since you now have another technology you can use
+                       | to develop webpages. Of course, we won't be going over PHP during the presentation this Friday.
+                       | We will be focusing on Django and MySQL.  Using MAMP to install the above just makes the installations
+                       | process less painful.
+            ol
+                | Let's go ahead and install MAMP on  our machine.     
+                li  Type the following into the terminal:
+                    div.code open -a "Safari" https://www.google.com/
+                    | And voila, Safari opens  up! I love the Terminal!
+                li Go ahead and search for  the phrase "Download MAMP".
+                    | I think the very first result that goes to the page: 
+                    | https://www.mamp.info/en/downloads/
+                    | is what you want. Click on it. Wonderful.
+                li Go ahead and click  the Download button beside "download MAMP & MAMP PRO 3.5 (Mac OSX)"
+                    | The download should start.  Give it some time.., Visualize the websites you wanna make on Django..... 
+                li Alright, now my buddy Vitaliy encountered an issue when we tried to open the downloaded file saying that the  software 
+                    | is from an unidenti..... So here's what you can do instead to open the installed file:
+                    ol 
+                    li Open Finder and  navigate to the Downloads folder.
+                    li Right Click and select Open from the menu! Alright!
+                li Alright, just keep hitting Continue, accept the  license agreement and install MAMP.    
+                li Let's check if everything went well. Open LaunchPad and search for MAMP. 
+                li You'll find two versions there: the free one(that's grayed out) and the Pro one(you'll have to pay for this one later on. It's like a trial version)
+                li Go ahead and select the gray one - which is the free one.
+                li Now go ahead  and click the Start Servers button.
+                li Next thing you should see Safari open a webpage indicating that all is good!
+                
+                | Well done soldier! Wonderful!
+                | Just one last thing though. We gotta check if MySQL is installed properely or not.
+                | So keep reading my friend!
+                li Open Terminal. Make sure you're in the root directory. To navigate to the root directory in the Terminal
+                | Type the following onto the console:
+                div.code cd /
+                li Now Type the following into the Terminal:
+                div.code   /Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
+                | And voila, this should start MySQL in the terminal! 
+                | Yes, so  now you're working on MySQL. Go ahead and type the following  into the MySQL terminal:
+                div.code show databases
+                |  You should see at least one database  listed. Awesome! 
+        | Well done UWT dawg! Alright, hang in there! See you tomorrow!

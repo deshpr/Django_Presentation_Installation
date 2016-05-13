@@ -1,0 +1,131 @@
+
+html
+  head
+    title= title
+    link(rel='stylesheet' href='/stylesheets/index.css')
+  body
+    header Huscii Coding Presentations
+    h2 Thank you for deciding to come to my wonderful workshop!
+    h2 Alright 
+    |  Go  ahead, chose your platform :)
+    
+    h2 Windows Install
+    ol Alrighy let's get started!
+      | In order to setup an convenient  environment to work with Django, here are some things you'll need:
+      ul 
+        li Python ( I prefer 2.7)
+        li Apache is a very popular web server software. Therefore, by  installing Apache, you will
+            | be able to deploy or host  websites you create on a server (since you need a server to 
+            | host  your website - server 101 folks!)
+        li MySQL is, that's  right, an RDBMS - Relational Database Management System.
+            | We will be using MySQL for setting up our databases and communicating with these databases.
+            | ( yes, we will store data in the database and work with these results on  our website too!)
+    | In order to install Apache and MySQL, an easy method it  to install WAMP. WAMP stands for Windows for Apache, MySQL and PHP.
+    | By installing WAMP, you get Apache, MySQL and PHP. PHP is just another web technology
+    | you can use to make websites. Of course, we won't be  going over PHP  for the presentation thsi Friday.  We'll be focusing on Django. 
+    | But having PHP is absolutely fine :)
+    
+    | The best way to get around setting  up our environment is to install Python, followed by Django, and then WAMP.         
+    | I am guessing you've already got Python installed on your machine. If you don't, it's all good!
+    | Follow the steps below to install Python 2.7. And if you do, then you can skip over to the steps involving installing  pip and Django.
+    ol 
+        li
+            h2 Installing Python 2.7
+            ol
+                li Open your favorite  web browser.  Open a search engine and search for "install python 27 on windows". I like Python 2.7, and it's totally
+                | cool to go with it. I think the very first link works - the one pointing to python.org/downloads
+                li Go ahead and  click Python 2.7.11.
+                li Click on the Windows x86 MSI installer to download it. Wait for the  download to finish. Dream about the wonderful websites you'd make with Django.
+                | How you'd Tango with Django......
+                li Wonderful. Go ahead and  open the MSI installer file. 
+                li Click Next. The installer tells me it'd install  Python  in the location: C:\Python27\ Make sure it doesn't install Python27 
+                | in the Downloads folder!
+                li Keep hitting Next and then let the installation begin. 
+                li Wonderful! Alright click Finish to close the Installer.
+        li  
+            h2  Setting up Python access from the Command Prompt
+            ol  We'll work on making sure Python is accessible from your command prompt.  That's because 
+               | When we  start working on making the website, we might have to run a python program from the command prompt and pass in some parameters to
+               | to the python program.(and another reason is that I love working from the command prompt! It's awesome! I love it!)
+               | Then let's get started:
+               li Open your command prompt. In case it was already open when python was being installed, close and open it again.
+               li Type python onto the command prompt. What do you see?
+                  | Do you see the Python console appear in front of you? If yes, that's awesome! You can directly skip to installing  pip and Django 
+                  |  on your machine.  If not, it's all good! Here's what you gotta do...
+               li After typing  python if the command prompt indicated that python is not a recognizable command, then  we are going to have to 
+                    | add python to the environment variables of the system. So here's what we'll do...
+              li Windows 10 Users: In the  search box at the bottom left, type "edit environment variables"
+                 | Users working with  versions preceeding Windows 10: 
+                 ol
+                    li Open Control Panel and double click System.
+                    li Click the "Advanced Tab".
+                    li Click Environment Variables.
+                    li Click Edit System Variables
+                    li Click the PATH variable under "User variables for <Your username>"
+                    li Make sure the path to your  Python installtion is included in the PATH variable's value.
+                      | Wonderful. 
+                    li Now  close the command prompt if you have it open, and open it again.  Type  python  and hit Enter.
+                        | Voila! It works!
+        li Installing Django on your machine
+            ol
+                | Django is a  python based framework. We'll  be downloading a variety of pythong packages.
+                | And pip is a great tool to do that. So let's go ahead and install pip.
+                li     
+                    | Open your favorite web browser. Enter the following in the search bar:
+                    | https://pip.pypa.io/en/stable/installing
+                    | (Note that since you're the root user, you don't need to type sudo easy_install pip) 
+                li  Download the get-pip.py file, which is under the heading "Installing with get-pip.py"
+                li  Open  command prompt at the location wherein you downloaded get-pip.py
+                li  As stated in the webpage, enter the following into the command prompt:
+                    div.code python get-pip.py
+                li  Wonderful!  Well done! 
+                    | Time to install Django, the  framework we will be using for web  development.
+                    | We'll be using pip to install Django. I love pip and it is absolutely amazing!
+                    | Type the following onto the command prompt.
+                    | pip install django
+                | Excellent! You've successfully installed Django. Now the only thing left is an awesome backend, and we'll use
+                | MySQL for that! 
+         li 
+            h2 Installing WAMP 
+            | Open  your favorite browser and search for "download WAMP for Windows"
+            | I think the very first result that goes to the page: 
+            | https://www.wampserver.com/en/
+            | is what you want. Click on it. Wonderful.
+        li  Click "Start using WAMP".  Download  the WAMP version based on whether your machine is 32 bit or 64 bit. And make sure
+            | you select the one with a later version for PHP.  
+            | Download WAMP.              
+            | The download should start.  Give it some time.., Visualize the websites you wanna make on Django..... 
+        li Open the downloaded installer for WAMP.
+        li Once the installer starts, do the  following:
+            ol
+                li Select your language. I have chosen "English".
+                li Continue to click Next, leaving the default options. 
+                | IMPORTANT: Make sure that WAMP is installed in the location: "C:\wamp64", not the Downloads folder!
+                li Go ahead and hit Install.
+                li Wait for the Installation to complete. Dream about your websites on Django. Tango with Django........ 
+                | (I agree, the installation can be a little too long...)
+                li NOTE: The installer may ask you about chosing the default Web Browser, or the default Text Editor. 
+                | Feel free to go with the default options here. Furthermore, the Windows Security Alert may 
+                | ask your permission for allowing acess to WAMP. Go ahead and click "Allow Access".
+                li Awesome, we've installed WampServer as well!
+                li Let's  open MySQL to make sure  everything has been installed as it should be. 
+        li From the Start Menu, search for "wamp".  The installed Wamp software  should show up.
+        li Click it to open it. You'll now see the WAMP icon appear in the System Tray. Wonderful. Oh, and I forgot to mention.
+           | We can only work with MySQL, or start an Apache server after turning on WAMP. If WAMP is off, we cannot use the 
+           | MySQL service. Awesome.
+       li  You'll find the WAMP icon in  the system tray. It  can be either of the following three colors:
+            ul
+                li Red - this means the WAMP Server hasn't started yet, or is off.
+                li Orange - The WAMP server is  starting... but it hasn't started yet.
+                li Green - the WAMP server has started successfully!
+            | Therefore, wait for the WAMP server to turn Green, and you should be good to go.
+       li Once the WAMP server  is green, go ahead and Click it. Hover your mouse over MySQL option. 
+       li Select MySQL console from the menu that appears.
+       li The MySQL terminal will open up! Awesome!  But you're asked for a password! What do we do!
+       li By default, the user name  is set to "root" and the password is empty. Therefore, do not type anything. Just press the Enter key.
+       li AAnd voila! The MySQL terminal should start! You can now create databases, tables, store information and retrieve it! How cool is that!
+       li Go ahead and type the following in:
+       div.code show databases
+       li And voila, you should see a few databases. This means all is well.
+       
+   | Well done soldier. Sit back. Relax. Get some sleep. I'll see you at the presentation tomorrow!
